@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Autocomplete Settings</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      .toggle-container {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .status {
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 4px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Text Autocomplete</h2>
+
+    <div class="toggle-container">
+      <label>
+        <input type="checkbox" id="enableExtension" checked />
+        Enable Extension
+      </label>
+    </div>
+
+    <p>Press <strong>Tab</strong> to accept suggestions</p>
+    <p>Press <strong>Esc</strong> to dismiss suggestions</p>
+
+    <div id="status" class="status"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

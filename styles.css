@@ -1,0 +1,25 @@
+.autocomplete-suggestion {
+  z-index: 9999;
+  background-color: transparent;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.autocomplete-suggestion-inline {
+  display: inline;
+  user-select: none;
+}
+
+.ai-ghost-text {
+  position: absolute;
+  color: rgba(128, 128, 128, 0.8);
+  pointer-events: none;
+  z-index: 9999;
+  font-family: inherit;
+  font-size: inherit;
+  white-space: pre;
+}
+
+.dark-mode.ai-ghost-text {
+  color: rgba(200, 200, 200, 0.5);
+}
